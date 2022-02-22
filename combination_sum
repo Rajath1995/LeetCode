@@ -1,0 +1,56 @@
+class Solution:
+    def combinationSum(self, candidates: List[int], target: int) -> List[List[int]]:
+        final_output = []
+        final_output2 = []
+        if (len(candidates) == 0):
+            return []
+        if (len(candidates) == 1 and candidates[0]>target):
+            return []
+        if (len(candidates) == 1 and candidates[0] == target):
+            return [[candidates[0]]]
+        for num in candidates:
+            if (num == target):
+                final_output.append([num])
+            elif (target % num == 0 and num!=target):
+                temp = []
+                quotient = target/num
+                j = quotient
+                while j != 0:
+                    temp.append(num)
+                    j -=1
+                final_output.append(temp)
+            if (num < target):
+                temp1 = []
+                value = target//num
+                remaining = target-(value*num)
+                if (remaining in candidates):
+                    i = value
+                    while i!=0:
+                        temp1.append(num)
+                        i-=1
+                    temp1.append(remaining)
+                    final_output.append(temp1)
+
+        def repeat_step(sums, nums):
+            sums2 = sums
+            temp2 = []
+            for num in nums:
+                if (num <= sums2):
+                    sums2 = sums2 - num
+                    temp2.append(num)
+            return temp2
+
+
+        final_nums = []
+        final_target = target
+        while final_target > -1:
+            temp = repeat_step(final_target, candidates)
+            for value in temp:
+                final_nums.append(value)
+            final_target = final_target - sum(final_nums)
+        if sum(final_nums) == target:
+            final_output.append(final_nums)
+        for elem in final_output:
+            if sorted(elem) not in final_output2:
+                final_output2.append(sorted(elem))
+        return final_output2
