@@ -7,3 +7,4 @@ Daily Coding exercise
 4.  02/20/2022 - Longest Palindrome Substring - https://leetcode.com/problems/longest-palindromic-substring/
 5.  02/21/2022 - Combination Sum - https://leetcode.com/problems/combination-sum/
 6.  02/28/2022 - Permutations - https://leetcode.com/problems/permutations/
+7. 03/02/2022 - Merge Intervals - https://leetcode.com/problems/merge-intervals/submissions/
