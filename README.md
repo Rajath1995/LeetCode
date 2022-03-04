@@ -8,3 +8,4 @@ Daily Coding exercise
 5.  02/21/2022 - Combination Sum - https://leetcode.com/problems/combination-sum/
 6.  02/28/2022 - Permutations - https://leetcode.com/problems/permutations/
 7. 03/02/2022 - Merge Intervals - https://leetcode.com/problems/merge-intervals/submissions/
+8. 03/03/2022 - Best Time to Buy and Sell Stock - https://leetcode.com/problems/best-time-to-buy-and-sell-stock/submissions/
