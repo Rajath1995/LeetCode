@@ -10,3 +10,4 @@ Daily Coding exercise
 7. 03/02/2022 - Merge Intervals - https://leetcode.com/problems/merge-intervals/submissions/
 8. 03/03/2022 - Best Time to Buy and Sell Stock - https://leetcode.com/problems/best-time-to-buy-and-sell-stock/submissions/
 9. 07/06/2022 - Bubble Sort. 
+10. 08/02/2022 -  Search in Rotated Sorted Array - https://leetcode.com/problems/search-in-rotated-sorted-array/
